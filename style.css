@@ -17,6 +17,15 @@ h3, h4, h5, h6{
   font-weight: 700;
   line-height: 1.3em;
 }
+h3{
+  color: #502314;
+  font-size: 25px;
+}
+h4{
+  color: #502314;
+  font-size: 25px;
+  font-weight: 500;
+}
 h6{
   color: #502314;
   font-size: 25px;
@@ -36,6 +45,16 @@ img{
   border-radius: 25px;
   padding: 12px 35px;
 }
+.bg-info{
+  background: #f5ebdc !important;
+}
+
+/* Padding Top for Some Section  */
+#about, #work, #service, #contact{
+  padding-top: 110px;
+}
+
+
 /*=============================
 * Heaader Area Style
 ===============================*/
@@ -46,7 +65,9 @@ img{
 #main_menu nav li{
   margin-left: 15px;
 }
-
+#mainmenu a.active{
+  color: #d62300;
+}
 /*=============================
 * Slider Area Style
 ===============================*/
@@ -55,10 +76,49 @@ img{
 }
 
 /*=============================
-* About Area Style
+* Contact Area Style
 ===============================*/
-#about{
-  padding-top: 110px;
+#contact{
+  background: url(img/map.jpg );
 }
 
 
+/*=============================
+* Footer Style
+===============================*/
+#footer form .btn.btn-info{
+  border-radius: 0;
+}
+#footer ul li a{
+  color: #262626;
+  font-weight: 500;
+  text-decoration: none;
+}
+#footer .social li{
+  display: inline-block;
+  margin-right: 15px;
+}
+/*=============================
+* Responsive Style
+===============================*/
+@media only screen and (max-width:600px) {
+  #main_menu img{
+    width: 200px;
+  }
+  #slider {
+    padding-top: 65px;
+  }
+  #about, #work, #service, #contact {
+      padding-top: 35px;
+  }
+  h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h6 {
+      font-size: 18px;
+  }
+}
